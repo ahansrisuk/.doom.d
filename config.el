@@ -1,4 +1,4 @@
-;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+;;; $DOOMDIR/config.el -*- lexi-cal-binding: t; -*-
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
@@ -40,7 +40,8 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org")
+(setq org-directory "~/allen-org")
+;; (setq org-directory "/mnt/c/Users/Allen/allen-org")
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -81,6 +82,9 @@
 ;; Line spacing
 (setq-default line-spacing 0.3)
 
+;; Font Family and size
+(setq doom-font (font-spec :family "JetBrains Mono" :size 18))
+
 ;; Keybinds for MacOS
 (setq mac-command-modifier       'meta
       ns-command-modifier        'meta
@@ -88,8 +92,9 @@
       mac-right-option-modifier  'alt)
 
 ;; Org Mode config
-;;
+;; allows for searching in folded headlines
 (setq-default org-fold-core-style 'overlays)
+;; other Org Mode config
 (after! org
   (setq-default org-hide-emphasis-markers t
                 org-log-done nil
@@ -97,12 +102,13 @@
                                    "/mnt/c/Users/Allen/allen-org/books.org"
                                    "/mnt/c/Users/Allen/allen-org/work.org"
                                    "/mnt/c/Users/Allen/allen-org/inbox.org")
-                org-todo-keywords '((sequence "TODO(t)" "PROG(p)" "|" "DONE(d)" "CNCL(c)" )
+                org-todo-keywords '((sequence "TODO(t)" "IN_PROGRESS(p)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" )
                                     (sequence "[ ](o)" "[-](i)" "[?](q)" "|" "[X](x)")
-                                    (type "PROJ(P)" "BUG(b)" "|"))
-                org-todo-keyword-faces'(("PROG" . "SteelBlue")
-                                        ("PROJ" . "LightSkyBlue")
-                                        ("CNCL" . "honeydew3")
+                                    (type "PROJECT(P)" "BUG(b)" "|"))
+                org-todo-keyword-faces'(("IN_PROGRESS" . "SteelBlue")
+                                        ("WAITING" . "MediumSlateBlue")
+                                        ("PROJECT" . "LightSkyBlue")
+                                        ("CANCELLED" . "honeydew3")
                                         ("BUG" . "tan1")
                                         ("[-]" . "SteelBlue")
                                         ("[?]" . "moccasin"))
