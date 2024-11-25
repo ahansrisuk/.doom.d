@@ -106,7 +106,6 @@
                                     (sequence "[ ](o)" "[-](i)" "[?](q)" "|" "[X](x)")
                                     (type "PROJECT(P)" "BUG(b)" "|"))
                 org-todo-keyword-faces'(("IN_PROGRESS" . "SteelBlue")
-                                        ("WAITING" . "MediumSlateBlue")
                                         ("PROJECT" . "LightSkyBlue")
                                         ("CANCELLED" . "honeydew3")
                                         ("BUG" . "tan1")
