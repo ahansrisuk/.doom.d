@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-gruvbox)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -105,7 +105,8 @@
                 org-todo-keywords '((sequence "TODO(t)" "IN_PROGRESS(p)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" )
                                     (sequence "[ ](o)" "[-](i)" "[?](q)" "|" "[X](x)")
                                     (type "PROJECT(P)" "BUG(b)" "|"))
-                org-todo-keyword-faces'(("IN_PROGRESS" . "SteelBlue")
+                org-todo-keyword-faces'(("TODO" . "LightGreen")
+                                        ("IN_PROGRESS" . "SteelBlue")
                                         ("WAITING" . "PeachPuff")
                                         ("PROJECT" . "LightSkyBlue")
                                         ("CANCELLED" . "honeydew3")
