@@ -102,14 +102,14 @@
                                    "/mnt/c/Users/Allen/allen-org/books.org"
                                    "/mnt/c/Users/Allen/allen-org/work.org"
                                    "/mnt/c/Users/Allen/allen-org/inbox.org")
-                org-todo-keywords '((sequence "TODO(t)" "IN_PROGRESS(p)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" )
+                org-todo-keywords '((sequence "TODO(t)" "IN_PROGRESS(p)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)" )
                                     (sequence "[ ](o)" "[-](i)" "[?](q)" "|" "[X](x)")
                                     (type "PROJECT(P)" "BUG(b)" "|"))
                 org-todo-keyword-faces'(("TODO" . "LightGreen")
                                         ("IN_PROGRESS" . "SteelBlue")
                                         ("WAITING" . "PeachPuff")
                                         ("PROJECT" . "LightSkyBlue")
-                                        ("CANCELLED" . "honeydew3")
+                                        ("CANCELED" . "honeydew3")
                                         ("BUG" . "tan1")
                                         ("[-]" . "SteelBlue")
                                         ("[?]" . "moccasin"))
