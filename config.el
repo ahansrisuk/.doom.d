@@ -101,7 +101,9 @@
                 org-agenda-files '("/mnt/c/Users/Allen/allen-org/personal.org"
                                    "/mnt/c/Users/Allen/allen-org/books.org"
                                    "/mnt/c/Users/Allen/allen-org/work.org"
+                                   "/mnt/c/Users/Allen/allen-org/contacts.org"
                                    "/mnt/c/Users/Allen/allen-org/inbox.org")
+                org-contacts-files '("/mnt/c/Users/Allen/allen-org/contacts.org")
                 org-todo-keywords '((sequence "TODO(t)" "IN_PROGRESS(p)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)" )
                                     (sequence "[ ](o)" "[-](i)" "[?](q)" "|" "[X](x)")
                                     (type "PROJECT(P)" "BUG(b)" "|"))
